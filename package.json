@@ -1,0 +1,16 @@
+{
+  "name": "cs4ks",
+  "version": "1.0.0",
+  "description": "CIS 526 Project 4",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mike Ruckert",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.1.0",
+    "ejs": "^3.1.3"
+  }
+}

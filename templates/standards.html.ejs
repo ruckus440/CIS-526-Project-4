@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Kansas Computer Science Standards</title>
+    <link href="/site.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>Kansas Computer Science Standards</h1>
+    <div id="stdDiv">
+      <div class="stdItem" id="banner">
+        <div class="identifier">Identifier</div>
+        <div class="statement">Standard</div>
+        <div class="description">Description</div>
+        <div class="concept">Concepts</div>
+        <div class="practices">Practices</div>        
+      </div>
+      
+      <% standards.forEach(function(standard) { %>
+        <div class="stdItem">
+          <div class="identifier"><%= standard.identifier; %></div>
+          <div class="statement"><%= standard.description; %></div>
+          <div class="description hideable"><%= standard.summary; %></div>
+          <div class="concept hideable">
+            <%= standard.concept; %>
+            <div class="subconcept hideable"><%= standard.subconcept; %></div>
+          </div>
+          <div class="practices hideable"><%= standard.practices; %></div>
+          <button class="collapsible"></button>
+        </div>      
+      <% }) %>
+    </div>
+    <script src="site.js"></script>
+  </body>
+  
+</html>
+
+
+
+
